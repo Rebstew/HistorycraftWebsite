@@ -1,0 +1,74 @@
+html body {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    font-size: 18pt;
+}
+
+.black {
+    color: #24272b;
+}
+
+.blue {
+    color: #7289da;
+}
+
+.red {
+    color: #c94d46
+}
+
+.yellow {
+    color: #e6b728
+}
+
+#intro {
+    /* background-color: white; */
+    font-size: 2rem;
+    min-height: 100vh;
+    z-index: 2;
+}
+
+#background {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    position: fixed;
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: -1;
+}
+
+#intro a {
+    color: white;
+}
+
+#servers {
+    background-color: #24272b;
+    color: white;
+    min-height: 100vh;
+}
+
+#vote {
+    background-color: #24272b;
+    color: white;
+}
+
+footer {
+    color: #24272b;
+    background-color: white;
+}
+
+.copy:hover {
+    cursor: copy;
+}
+
+h2 {
+    font-size: 4rem !important;
+}
+
+h3 {
+    font-size: 3rem !important;
+}
+
