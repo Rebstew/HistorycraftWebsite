@@ -61,7 +61,7 @@ footer {
 }
 
 .copy:hover {
-    cursor: copy;
+    cursor: url('../images/copy-cursor.png'), auto;
 }
 
 h2 {
