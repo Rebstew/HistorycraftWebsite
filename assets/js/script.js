@@ -21,6 +21,5 @@ $(document).ready(function(){
                 copyTextToClipboard(copyContentAttribute.value);
             }
         }
-        
     });
 });
