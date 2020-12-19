@@ -86,7 +86,29 @@ h3 {
     border-radius: .1rem;
 }
 
-.test {
+.copy-dialog {
     background-color: rgba(128, 128, 128, 0.3);
     border-radius: .3rem;
+}
+
+@keyframes up-down {
+    0% {
+        top: 0
+    }
+    25% {
+        top: -2rem;
+    }
+
+    50% {
+        top: 2rem;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.button-ok {
+    animation-name: up-down;
+    animation-duration: 2s;
+    position: relative;
 }

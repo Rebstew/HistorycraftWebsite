@@ -14,12 +14,37 @@ $(document).ready(function(){
         event.stopPropagation();
         event.stopImmediatePropagation();
 
-        let attributes = event.target.attributes;
+        let item = event.target;
+        let correctItem = item.classList.contains('copy') ? item : $(item).parents('.copy')[0];
+
+        let attributes = correctItem.attributes;
         if(attributes){
             let copyContentAttribute = attributes['data-copy-content'];
             if(copyContentAttribute){
                 copyTextToClipboard(copyContentAttribute.value);
             }
+
+            // add a small animation class on the button to confirm text has been copied
+            let buttonIdAttr = attributes['data-copy-button-id'];
+            if(buttonIdAttr){
+                let button = $('#' + buttonIdAttr.value);
+                if(button) {
+                    button.removeClass('btn-primary');
+                    button.addClass('button-ok btn-success');
+                    button.text ("Copié ✅");
+                }
+            }
         }
     });
+
+    $('body').on(
+        'webkitAnimationEnd oanimationend msAnimationEnd animationend',
+        function() {
+            $('.button-ok').each(function(){
+                $(this).removeClass('button-ok btn-success');
+                $(this).addClass('btn-primary');
+                $(this).text("Copier l'IP");
+            });
+        }
+    );
 });
