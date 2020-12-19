@@ -48,11 +48,12 @@ $(document).ready(function(){
         }
     );
 
+    // activate the firefly effect on the intro div
     $.firefly({
         color: '#fff',
         minPixel: 1,
         maxPixel: 3,
         total : 100,
-        on: 'body'
+        on: '#intro'
     });
 });
