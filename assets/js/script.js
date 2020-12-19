@@ -47,4 +47,12 @@ $(document).ready(function(){
             });
         }
     );
+
+    $.firefly({
+        color: '#fff',
+        minPixel: 1,
+        maxPixel: 3,
+        total : 100,
+        on: 'body'
+    });
 });
