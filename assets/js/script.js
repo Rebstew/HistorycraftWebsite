@@ -56,4 +56,17 @@ $(document).ready(function(){
         total : 100,
         on: '#intro'
     });
+
+    $.ajax({
+        url: 'assets/misc/splashes.json'
+    }).done(function(data) {
+        console.log("data: ",data);
+        let pun = (Math.random() > 0.5);
+        let splashContent = data.version;
+        if(pun) {
+            splashContent = data.puns[Math.floor(Math.random() * data.puns.length)];
+        }
+
+        $('#splash').text(splashContent);
+    });
 });
