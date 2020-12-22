@@ -1,12 +1,12 @@
 {
-    version: 'Version 1.16.4 !',
-    puns: [
-        'Sans gluten !',
-        'Parlez en à votre médecin !',
-        'Avec des pandas !',
-        'Cherchez la magic box !',
-        'Avec Crafture, mais sans steampunk !',
-        'Cros du boucher !',
-        'Don\'t take me for a jambon!'
+    "version": "Version 1.16.4 !",
+    "puns": [
+        "Sans gluten !",
+        "Parlez en à votre médecin !",
+        "Avec des pandas !",
+        "Cherchez la magic box !",
+        "Avec Crafture, mais sans steampunk !",
+        "Cros du boucher !",
+        "Don't take me for a jambon!"
     ]
 }
