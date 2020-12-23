@@ -137,7 +137,7 @@ h3 {
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    position: relative;
+    position: absolute;
     font-size: 1.5rem;
     transform-origin: center;
 }
