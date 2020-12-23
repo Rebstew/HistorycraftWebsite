@@ -60,7 +60,6 @@ $(document).ready(function(){
     $.ajax({
         url: 'assets/misc/splashes.json'
     }).done(function(data) {
-        console.log("data: ",data);
         let pun = (Math.random() > 0.5);
         let splashContent = data.version;
         if(pun) {

@@ -119,13 +119,13 @@ h3 {
         transform:  translateY(-5rem) translateX(15rem) rotate(-24deg) scale(1.0);
     }
     25% {
-        transform:  translateY(-5rem) translateX(15rem) rotate(-24deg) scale(1.2);
+        transform:  translateY(-5rem) translateX(15rem) rotate(-24deg) scale(1.1);
     }
     50% {
         transform:  translateY(-5rem) translateX(15rem) rotate(-24deg) scale(1.0);
     }
     75% {
-        transform:  translateY(-5rem) translateX(15rem) rotate(-24deg) scale(0.8);
+        transform:  translateY(-5rem) translateX(15rem) rotate(-24deg) scale(0.9);
     }
     100% {
         transform: translateY(-5rem) translateX(15rem) rotate(-24deg) scale(1.0);
@@ -134,7 +134,7 @@ h3 {
 
 #splash {
     animation-name: splash-text;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     position: relative;
