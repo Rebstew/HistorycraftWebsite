@@ -58,7 +58,8 @@ $(document).ready(function(){
     });
 
     $.ajax({
-        url: 'assets/misc/splashes.json'
+        url: 'assets/misc/splashes.json',
+        cache: true
     }).done(function(data) {
         let pun = (Math.random() > 0.5);
         let splashContent = data.version;
