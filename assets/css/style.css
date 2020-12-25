@@ -114,7 +114,7 @@ h3 {
     position: relative;
 }
 
-@keyframes splash-text {
+@keyframes splash-text-big {
     0% {
         transform:  translateY(-5rem) translateX(15rem) rotate(-24deg) scale(1.0);
     }
@@ -132,16 +132,42 @@ h3 {
     }
 }
 
+@keyframes splash-text-small {
+    0% {
+        transform: scale(1.0);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.0);
+    }
+    75% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+
 #splash {
-    animation-name: splash-text;
     animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    position: absolute;
     font-size: 1.5rem;
     transform-origin: center;
 }
 
-.zoomed {
-    transform: scale(1.2);
+@media screen and (min-width: 576px){
+    #splash {
+        animation-name: splash-text-big;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 576px){
+    #splash {
+        animation-name: splash-text-small;
+        text-align: center;
+    }
 }
