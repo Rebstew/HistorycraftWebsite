@@ -49,13 +49,13 @@ $(document).ready(function(){
     );
 
     // activate the firefly effect on the intro div
-    // $.firefly({
-    //     color: '#fff',
-    //     minPixel: 1,
-    //     maxPixel: 3,
-    //     total : 100,
-    //     on: '#intro'
-    // });
+    $.firefly({
+        color: '#fff',
+        minPixel: 1,
+        maxPixel: 3,
+        total : 100,
+        on: '#intro'
+    });
 
     $.ajax({
         url: 'assets/misc/splashes.json',
