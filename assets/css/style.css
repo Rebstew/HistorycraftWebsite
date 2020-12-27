@@ -116,19 +116,19 @@ h3 {
 
 @keyframes splash-text-big {
     0% {
-        transform:  translateY(-5rem) translateX(15rem) rotate(-24deg) scale(1.0);
+        transform: translateY(-6rem) translateX(15rem) rotate(-24deg) scale(1.0);
     }
     25% {
-        transform:  translateY(-5rem) translateX(15rem) rotate(-24deg) scale(1.1);
+        transform: translateY(-6rem) translateX(15rem) rotate(-24deg) scale(1.1);
     }
     50% {
-        transform:  translateY(-5rem) translateX(15rem) rotate(-24deg) scale(1.0);
+        transform: translateY(-6rem) translateX(15rem) rotate(-24deg) scale(1.0);
     }
     75% {
-        transform:  translateY(-5rem) translateX(15rem) rotate(-24deg) scale(0.9);
+        transform: translateY(-6rem) translateX(15rem) rotate(-24deg) scale(0.9);
     }
     100% {
-        transform: translateY(-5rem) translateX(15rem) rotate(-24deg) scale(1.0);
+        transform: translateY(-6rem) translateX(15rem) rotate(-24deg) scale(1.0);
     }
 }
 
@@ -156,6 +156,7 @@ h3 {
     animation-iteration-count: infinite;
     font-size: 1.5rem;
     transform-origin: center;
+    width: 100%
 }
 
 @media screen and (min-width: 576px){
