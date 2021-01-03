@@ -68,5 +68,6 @@ $(document).ready(function(){
         }
 
         $('#splash').text(splashContent);
+        $('#version').text('Minecraft ' + data.version);
     });
 });

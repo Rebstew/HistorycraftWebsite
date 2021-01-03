@@ -172,3 +172,10 @@ h3 {
         text-align: center;
     }
 }
+
+#version {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 2rem;
+    font-size: 2rem;
+}

@@ -8,9 +8,17 @@
 }
 
 .mc-yellow {
-    color: #FFFF55;
-  }
-  
-  .mc-yellow.mc-shadow {
-    text-shadow: 3px 3px #3F3F15;
-  }
+  color: #FFFF55;
+}
+
+.mc-yellow.mc-shadow {
+  text-shadow: 3px 3px #3F3F15;
+}
+
+.mc-white {
+  color: #FFFFFF;
+}
+
+.mc-white.mc-shadow {
+  text-shadow: 3px 3px #3F3F3F;
+}
