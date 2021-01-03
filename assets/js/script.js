@@ -62,7 +62,7 @@ $(document).ready(function(){
         cache: true
     }).done(function(data) {
         let pun = (Math.random() > 0.5);
-        let splashContent = data.version;
+        let splashContent = 'Version ' + data.version;
         if(pun) {
             splashContent = data.puns[Math.floor(Math.random() * data.puns.length)];
         }
